@@ -1,28 +1,26 @@
-// アニメーション終了時操作
-// const container = document.querySelector('.fusuma-container');
-// const fusumaLeft = document.querySelector('.fusuma-left');
-
-// fusumaLeft.addEventListener('animationend', () => {
-//     container.style.display = 'none';
-// });
-
-
-// マウスストーカー
-const stalker = document.getElementById('coneta');
-
-// ストーカーアニメーション用
-// let lastX = 0;
-
+// mouse stalker
+const stalker = document.getElementById('koneta');
 document.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    stalker.style.transform = `translate(${x}px, ${y}px) scale(0.25)`;
+    stalker.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(0.8, 0.8)`;
 });
-
 document.addEventListener('mouseenter', () => {
     stalker.classList.add('active');
 });
-
 document.addEventListener('mouseleave', () => {
     stalker.classList.remove('active');
+});
+
+
+// side menu
+const menu = document.querySelector('.sidemenu-container');
+document.querySelector('.side-open-btn').addEventListener('click', () => {
+    menu.classList.add('active');
+});
+document.querySelector('.side-close-btn').addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+document.querySelectorAll('.side-menu-text').forEach(close => {
+    close.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 });
