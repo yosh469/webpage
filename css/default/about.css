@@ -1,0 +1,59 @@
+/* style for about of default width */
+@media (min-width: 1024px) {
+    #about {
+        width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-title-container {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-title-text {
+        font-size: 50px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: blue;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 25px;
+        user-select: none;
+    }
+
+    .about-table {
+        width: 80%;
+        margin: 0 5% 20px auto;
+    }
+
+    .about-head-cell {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .about-head-text {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .about-cont-cell {
+        width: 70%;
+        height: 50px;
+        text-align: left;
+    }
+
+    .about-cont-text {
+        font-size: 17px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        margin-left: 20px;
+    }
+}

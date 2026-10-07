@@ -1,0 +1,79 @@
+/* style for contact of default width */
+@media (min-width: 1024px) {
+    #contact {
+        width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-title-container {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-title-text {
+        font-size: 50px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: green;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 25px;
+        user-select: none;
+    }
+
+    .contact-table {
+        width: 50%;
+        margin: 0 auto 20px auto;
+    }
+
+    .contact-head-cell {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .contact-head-text {
+        font-size: 17px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+        letter-spacing: 10px;
+    }
+
+    .contact-cont-cell {
+        width: 65%;
+        height: 50px;
+        text-align: left;
+    }
+
+    .contact-cont-text {
+        font-size: 18px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        margin-left: 40px;
+    }
+
+    .attention-container {
+        width: 90%;
+        padding: 25px 0;
+        margin: 0 auto 45px auto;
+        background-color: seashell;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .attention-text {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: bold;
+        font-family: serif;
+        color: maroon;
+    }
+}

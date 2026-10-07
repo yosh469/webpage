@@ -1,0 +1,59 @@
+/* style for diary of default width */
+@media (min-width: 1024px) {
+    #diary {
+        width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diary-title-container {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .diary-title-text {
+        font-size: 50px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: orangered;
+        text-shadow: 4px 3px 4px lightgray;
+        letter-spacing: 25px;
+        user-select: none;
+    }
+
+    .diary-table {
+        width: 75%;
+        margin: 0 8% 20px auto;
+    }
+
+    .diary-date-cell {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .diary-date-text {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .diary-cont-cell {
+        width: 75%;
+        height: 50px;
+        text-align: left;
+    }
+
+    .diary-cont-text {
+        font-size: 17px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+/* style for diary of mobile width */
+@media (max-width: 1023px) {
+    #diary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .diary-title-container {
+        width: 100%;
+        padding: 20px 0 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .diary-title-text {
+        font-size: 32px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: orangered;
+        text-shadow: 3px 2px 4px lightgray;
+        letter-spacing: 6px;
+        user-select: none;
+    }
+
+    .diary-table {
+        width: 97.5%;
+        margin: 0 auto;
+    }
+
+    .diary-date-cell {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .diary-date-text {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .diary-cont-cell {
+        width: 70%;
+        height: 35px;
+        text-align: left;
+    }
+
+    .diary-cont-text {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+}

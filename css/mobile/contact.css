@@ -1,0 +1,76 @@
+/* style for contact of default width */
+@media (max-width: 1023px) {
+    #contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+    }
+
+    .contact-title-container {
+        width: 100%;
+        padding: 20px 0 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-title-text {
+        font-size: 32px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: green;
+        text-shadow: 3px 2px 4px lightgray;
+        letter-spacing: 6px;
+        user-select: none;
+    }
+
+    .contact-table {
+        width: 97.5%;
+        margin: 0 auto;
+    }
+
+    .contact-head-cell {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .contact-head-text {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: gray;
+    }
+
+    .contact-cont-cell {
+        width: 55%;
+        height: 35px;
+        text-align: left;
+    }
+
+    .contact-cont-text {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .attention-container {
+        width: 95%;
+        padding: 16px 0;
+        margin: 16px auto 35px auto;
+        background-color: seashell;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .attention-text {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: bold;
+        font-family: serif;
+        color: maroon;
+    }
+}

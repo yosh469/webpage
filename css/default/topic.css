@@ -1,0 +1,67 @@
+/* style for topic of default width */
+@media (min-width: 1024px) {
+    .topic {
+        width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-areas:
+            "toptextleft topimgright"
+            "btmimgleft btmtextright";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+
+    .tp-img-1 {
+        grid-area: topimgright;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tp-img-2 {
+        grid-area: btmimgleft;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        object-fit: scale-down;
+        scale: 97.5%;
+    }
+
+    .tp-text-container-1 {
+        grid-area: toptextleft;
+        width: 100%;
+    }
+
+    .tp-text-container-2 {
+        grid-area: btmtextright;
+        width: 100%;
+    }
+
+    .tp-text-container {
+        width: 100%;
+        height: 100%;
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tp-text {
+        font-size: 20px;
+        line-height: 45px;
+        font-weight: bold;
+        font-family: serif;
+        color: black;
+        text-shadow: 2px 2px 4px yellow;
+    }
+}

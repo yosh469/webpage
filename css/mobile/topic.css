@@ -1,0 +1,62 @@
+/* style for topic of mobile width */
+@media (max-width: 1023px) {
+    .topic {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            "imgleft imgright"
+            "texttop texttop"
+            "textbtm textbtm";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 6px;
+        /* border: 1px solid black; */
+    }
+
+    .tp-img-1 {
+        grid-area: imgleft;
+        width: 100%;
+    }
+
+    .tp-img-2 {
+        grid-area: imgright;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: scale-down;
+        scale: 97.5%;
+    }
+
+    .tp-text-container-1 {
+        grid-area: texttop;
+        width: 100%;
+    }
+
+    .tp-text-container-2 {
+        grid-area: textbtm;
+        width: 100%;
+    }
+
+    .tp-text-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 16px 0;
+        background-color: aliceblue;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tp-text {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: bold;
+        font-family: serif;
+        color: black;
+        text-shadow: 1px 1px 4px yellow;
+    }
+}

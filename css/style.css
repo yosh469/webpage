@@ -1,0 +1,400 @@
+/* style for entire */
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.open-container {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+    z-index: 11;
+}
+
+/* style for default width */
+@media (min-width: 1024px) {
+
+    .open-ll,
+    .open-lr,
+    .open-rl,
+    .open-rr {
+        width: 25%;
+        height: 100%;
+        background-color: lightyellow;
+        border: 8px solid black;
+        box-sizing: border-box;
+    }
+
+    .open-obi {
+        width: 100%;
+        height: 30%;
+        background-color: darkblue;
+        position: absolute;
+        top: 52.5%;
+        left: 0;
+        translate: 0 -50%;
+    }
+
+    .open-te-inleft,
+    .open-te-inright {
+        width: 10%;
+        aspect-ratio: 1;
+        background-color: lightgray;
+        border: 4px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .open-te-inleft {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        translate: 0 -50%;
+    }
+
+    .open-te-inright {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        translate: 0 -50%;
+    }
+
+    .open-ll {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 12;
+        animation: openLeft 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    .open-lr {
+        position: absolute;
+        top: 0;
+        left: 25%;
+        z-index: 13;
+        animation: openLeft 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    @keyframes openLeft {
+        to {
+            left: -25%;
+        }
+    }
+
+    .open-rl {
+        position: absolute;
+        top: 0;
+        right: 25%;
+        z-index: 13;
+        animation: openRight 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    .open-rr {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 12;
+        animation: openRight 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    @keyframes openRight {
+        to {
+            right: -25%;
+        }
+    }
+
+    #koneta {
+        width: 100px;
+        aspect-ratio: 5 / 4;
+        background-color: transparent;
+        /* border: 1px solid black; */
+        position: fixed;
+        top: -15px;
+        left: -15px;
+        z-index: 9;
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.4s ease-out, opacity 0.4s ease;
+    }
+
+    #koneta.active {
+        opacity: 1;
+    }
+
+    .koneta-ear-left,
+    .koneta-ear-right {
+        width: 0;
+        height: 0;
+        border-bottom: 25px solid black;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+    }
+
+    .koneta-ear-left {
+        position: absolute;
+        top: 6%;
+        left: 12%;
+        rotate: -15deg;
+    }
+
+    .koneta-ear-right {
+        position: absolute;
+        top: 6%;
+        right: 12%;
+        rotate: 15deg;
+    }
+
+    .koneta-ear-left::after,
+    .koneta-ear-right::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 25px solid darkgray;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: -50% 35%;
+    }
+
+    .koneta-face {
+        width: 90%;
+        height: 75%;
+        background-color: lightgray;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 0;
+        overflow: hidden;
+        /* display: none; */
+    }
+
+    .koneta-face::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: 45% -50%;
+    }
+
+    .koneta-eye-left,
+    .koneta-eye-right {
+        width: 10%;
+        aspect-ratio: 1 / 2;
+        background-color: lightyellow;
+        border: 1px solid gray;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .koneta-eye-left {
+        position: absolute;
+        top: 45%;
+        left: 28%;
+        translate: 0 -50%;
+    }
+
+    .koneta-eye-right {
+        position: absolute;
+        top: 45%;
+        right: 28%;
+        translate: 0 -50%;
+    }
+
+    .koneta-eye-left::after,
+    .koneta-eye-right::after {
+        content: "";
+        width: 20%;
+        height: 60%;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .koneta-nose {
+        width: 0;
+        height: 0;
+        border-top: 4px solid deeppink;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .during-line {
+        width: 50%;
+        height: 4px;
+        margin: 50px 10% 50px auto;
+        background-color: darkblue;
+        border-radius: 100px;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 45px 0;
+        background-color: gray;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: ghostwhite;
+    }
+
+    .only-ms {
+        display: none;
+    }
+}
+
+/* style for mobile width */
+@media (max-width: 1023px) {
+
+    .open-ll,
+    .open-rr {
+        display: none;
+    }
+
+    .open-lr,
+    .open-rl {
+        width: 50%;
+        height: 100%;
+        background-color: lightyellow;
+        border: 6px solid black;
+        box-sizing: border-box;
+    }
+
+    .open-obi {
+        width: 100%;
+        height: 30%;
+        background-color: darkblue;
+        position: absolute;
+        top: 52.5%;
+        left: 0;
+        translate: 0 -50%;
+    }
+
+    .open-te-inleft,
+    .open-te-inright {
+        width: 16%;
+        aspect-ratio: 1;
+        background-color: lightgray;
+        border: 4px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+
+    .open-te-inleft {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        translate: 0 -50%;
+    }
+
+    .open-te-inright {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        translate: 0 -50%;
+    }
+
+    .open-lr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 13;
+        animation: openLeft 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    @keyframes openLeft {
+        from {
+            translate: 0 0;
+        }
+
+        to {
+            translate: -100% 0;
+        }
+    }
+
+    .open-rl {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 13;
+        animation: openRight 2.5s ease forwards;
+        animation-delay: 1.0s;
+    }
+
+    @keyframes openRight {
+        from {
+            translate: 0 0;
+        }
+
+        to {
+            translate: 100% 0;
+        }
+    }
+
+    #koneta {
+        display: none;
+    }
+
+    /* during line */
+    .during-line {
+        width: 60%;
+        height: 2px;
+        margin: 30px 5% 30px auto;
+        background-color: darkblue;
+        border-radius: 100px;
+    }
+
+    /* footer */
+    .footer {
+        width: 100%;
+        padding: 25px 0;
+        background-color: gray;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        font-weight: normal;
+        font-family: sans-serif;
+        color: ghostwhite;
+    }
+
+    .only-df {
+        display: none;
+    }
+}

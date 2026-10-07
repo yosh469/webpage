@@ -1,0 +1,114 @@
+/* style for side menu of default width */
+@media (min-width: 1024px) {
+    .side-open-btn {
+        width: 75px;
+        aspect-ratio: 1;
+        border: 3px solid black;
+        border-radius: 28px;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        z-index: 7;
+    }
+
+    .side-open-text {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: ghostwhite;
+        user-select: none;
+    }
+
+    .sidemenu-container {
+        width: 400px;
+        height: 100%;
+        border-left: 4px solid black;
+        border-radius: 25px 0 0 25px;
+        background-color: ghostwhite;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        translate: 100% 0;
+        transition: translate 0.2s linear;
+        z-index: 8;
+    }
+
+    .sidemenu-container.active {
+        translate: 0 0;
+    }
+
+    .side-close-btn {
+        width: 75px;
+        aspect-ratio: 1;
+        border: 3px solid black;
+        border-radius: 28px;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .side-close-text {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: ghostwhite;
+        user-select: none;
+    }
+
+    .side-menu-table {
+        width: 90%;
+        height: auto;
+    }
+
+    .side-menu-cell {
+        width: 100%;
+        height: 80px;
+        text-align: center;
+    }
+
+    .side-menu-text {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-shadow: 1px 1px 2px gray;
+        letter-spacing: 10px;
+    }
+
+    .side-menu-text:hover {
+        border-bottom: 4px solid black;
+    }
+
+    .side-top {
+        color: black;
+    }
+
+    .side-about {
+        color: blue;
+    }
+
+    .side-diary {
+        color: orangered;
+    }
+
+    .side-contact {
+        color: green;
+    }
+}
