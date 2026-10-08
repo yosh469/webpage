@@ -24,3 +24,8 @@ document.querySelectorAll('.side-menu-text').forEach(close => {
         menu.classList.remove('active');
     });
 });
+
+
+// get year in footer text
+const nowy = new Date();
+document.querySelector('.year-infoot').textContent = `${nowy.getFullYear()}`;
