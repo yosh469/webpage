@@ -127,7 +127,7 @@
 
     .track-tireleft,
     .track-tireright {
-        width: 22px;
+        width: 19.5%;
         aspect-ratio: 1;
         background-color: lightgray;
         border: 4px solid black;
