@@ -1,0 +1,10 @@
+/* style for side menu of default width */
+@media (max-width: 1023px) {
+    .side-open-btn {
+        display: none;
+    }
+
+    .sidemenu-container {
+        display: none;
+    }
+}
